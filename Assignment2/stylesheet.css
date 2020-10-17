@@ -7,7 +7,6 @@
       border: 1px solid black;
 	}
 
-
 body {
   background-color: lightblue;
 	}
@@ -19,8 +18,30 @@ h1 {
 	}
 
 p {
-  font-family:timesnewroman;
+  font-family:timesnewroman
   font-size: 18px;
   color: black;
   line-height: 1.6;
 	}
+
+.container {
+  position: relative;
+  font-family: Comic Sans MS;
+ font-size: 25px;
+ font-weight: bold;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 130px;
+  right: 150px;
+  background-color: transparent;
+  color: white;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+
+
+/* For external CSS later */
+/* Adapted From: https://www. */ 
