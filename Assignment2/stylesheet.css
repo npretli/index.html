@@ -24,23 +24,17 @@ p {
   line-height: 1.6;
 	}
 
-.container {
-  position: relative;
-  font-family: Comic Sans MS;
- font-size: 25px;
- font-weight: bold;
-}
+.background {
+  /* The image used */
+  background-image: url("meaford_sunset.jpg");
 
-.text-block {
-  position: absolute;
-  bottom: 105px;
-  right: 70px;
-  background-color: transparent;
-  color: white;
-  padding-left: 125px;
-  padding-right: 125px;
-}
+  /* Full height */
+  height: 100%; 
 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 /* For external CSS later */
 /* Adapted From: https://www. */ 
