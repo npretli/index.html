@@ -33,14 +33,13 @@ p {
 
 .text-block {
   position: absolute;
-  bottom: 130px;
-  right: 150px;
+  bottom: 105px;
+  right: 70px;
   background-color: transparent;
   color: white;
   padding-left: 125px;
   padding-right: 125px;
 }
-
 
 
 /* For external CSS later */
