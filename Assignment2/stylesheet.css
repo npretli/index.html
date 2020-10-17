@@ -23,10 +23,10 @@ body, html {
 
 .background {
   /* The image used */
-  background-image: url("img_girl.jpg");
+  background-image: url("meaford_sunset.jpg");
 
   /* Full height */
-  height: 100%; 
+  height: 50%; 
 
   /* Center and scale the image nicely */
   background-position: center;
