@@ -4,7 +4,7 @@ h1 {
   block-size: 50px;
   width: 70%;
   
-  background: lightblue;
+  background: #87CEFA;
   color: dark-gray;
   text-align: center;
   font-size: 50px;
@@ -13,7 +13,7 @@ h1 {
   margin: auto;
     }
 div {
-  background-color: #FAF0E6;
+  background-color: #EEE8AA;
   width: 70%;
   border-style: solid;
   border-width:4px;
