@@ -1,0 +1,48 @@
+h1 {
+  border-style: solid;
+  border-width: 8px;
+  block-size: 50px;
+  width: 70%;
+  
+  background: lightblue;
+  color: dark-gray;
+  text-align: center;
+  font-size: 50px;
+  font-family: Tahoma, Geneva, sans-serif;
+  padding: 50px;
+  margin: auto;
+    }
+div {
+  background-color: #FAF0E6;
+  width: 70%;
+  border-style: solid;
+  border-width:4px;
+  text-align: left;
+  padding: 35px;
+  margin: auto;
+     }
+body {
+  background-color: crimson;
+     }
+	 
+h2 {
+  font-family: Tahoma, Geneva, sans-serif;
+   }
+ 
+h4 {
+  font-family: Arial Black;
+  text-align: center;
+   }
+	  
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+  
+p  {
+  font-family: Georgia;
+   }
+
+/* For external CSS later */
+/* Adapted From: https://www. */ 
