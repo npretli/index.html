@@ -1,6 +1,6 @@
 h1 {
   border-style: solid;
-  border-width: 8px;
+  border-width: 12px;
   block-size: 50px;
   width: 70%;
   
@@ -8,8 +8,8 @@ h1 {
   color: dark-gray;
   text-align: center;
   font-size: 50px;
-  font-family: Tahoma, Geneva, sans-serif;
-  padding: 50px;
+  font-family: Impact, Charcoal, sans-serif;
+  padding: 30px;
   margin: auto;
     }
 div {
