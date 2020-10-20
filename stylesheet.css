@@ -1,11 +1,10 @@
 h1 {
   border-style: solid;
   border-width: 12px;
-  block-size: 50px;
   width: 70%;
   
   background: #87CEFA;
-  color: dark-gray;
+  color: black;
   text-align: center;
   font-size: 50px;
   font-family: Impact, Charcoal, sans-serif;
