@@ -6979,7 +6979,7 @@ textarea.form-control-lg {
 }
 
 .me-auto {
-  margin-right: auto !important;
+  margin-right: left !important;
 }
 
 .mb-0 {
@@ -11011,12 +11011,12 @@ html {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 5rem;
+    font-size: 6rem;
 	font-weight: bold;
     line-height: 5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.75rem;
+    font-size: 2rem;
 	font-weight: bold;
   }
 }
