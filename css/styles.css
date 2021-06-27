@@ -129,7 +129,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size:1.25rem;
-  color: white;
+  color: black;
 }
 
 abbr[title],
@@ -7345,7 +7345,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: white !important;
+  color: black !important;
 }
 
 .text-success {
@@ -10874,9 +10874,10 @@ html {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: white;
+  background-color: black;
   border-radius: 1rem;
   border-color: #FF7D7D;
+
 }
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
@@ -10889,7 +10890,7 @@ html {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #913070;
+  background-color: #1A2F1C;
 }
 .divider-custom.divider-light .divider-custom-icon {
   color: #913070;
@@ -11012,7 +11013,6 @@ html {
     font-size: 5rem;
 	font-weight: bold;
     line-height: 5rem;
-	color: black;
   }
   .masthead .masthead-subheading {
     font-size: 1.75rem;
