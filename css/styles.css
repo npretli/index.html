@@ -1354,7 +1354,7 @@ progress {
 
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33.3333333333333333%
   }
 
   .col-lg-5 {
@@ -1396,6 +1396,12 @@ progress {
     flex: 0 0 auto;
     width: 100%;
   }
+  
+   .col-lg-13 {
+    flex: 0 0 auto;
+    width: 100%
+   
+   }
 
   .offset-lg-0 {
     margin-left: 0;
@@ -10996,10 +11002,11 @@ html {
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  font-family: Tahoma, sans-serif;
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
-  color: rgb(26, 47, 28);
+  color: #242526;
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -11011,12 +11018,12 @@ html {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 6rem;
+    font-size: 5rem;
 	font-weight: bold;
-    line-height: 5rem;
+    line-height: 8rem;
   }
   .masthead .masthead-subheading {
-    font-size: 2rem;
+    font-size: 1.25rem;
 	font-weight: bold;
   }
 }
