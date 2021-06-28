@@ -130,6 +130,7 @@ p {
   margin-bottom: 1rem;
   font-size:1.25rem;
   color: #242526;
+  text-align: left;
 }
 
 abbr[title],
@@ -11007,6 +11008,7 @@ html {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
   color: #242526;
+  text-align: center;
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -11018,12 +11020,12 @@ html {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 5rem;
+    font-size: 5.5rem;
 	font-weight: bold;
-    line-height: 8rem;
+    line-height: 6rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 	font-weight: bold;
   }
 }
