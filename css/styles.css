@@ -501,6 +501,20 @@ progress {
   color: #242526;
 }
 
+.appscreenshot {
+    max-width: 1207px;
+    max-height: 539px;
+    width: 100%;
+    height: auto;
+}
+
+.diagrampic {
+    max-width: 1033px;
+    max-height: 622px;
+    width: 100%;
+    height: auto;
+}
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
