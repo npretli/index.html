@@ -462,9 +462,32 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+  color: #242526;
+}
+
+.lead-1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  color: #242526;
+  line-height: 1.5;
+}
+
+.lead-2 {
+  font-size: 1.0rem;
+  font-weight: bold;
+  text-align: center;
+  color: #242526;
+  line-height: 1.5;
+}
+
+.lead-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
   color: #242526;
 }
 
