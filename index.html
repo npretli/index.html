@@ -69,14 +69,90 @@
                 </div>
 				<!-- About Section Content-->
                 <div class="row">
-				<div class="container d-flex align-items-center flex-column">
-                <img src="images/method-1.JPG" alt="Data Acquisition / Pre-Processing" width="1052" height="632">
-				<img src="images/method-2.JPG" alt="Database Design and/or Processing" width="812" height="762">
-				<img src="images/method-3.JPG" alt="Spatial / Statistical Analysis" width="1051" height="679">
-				<img src="images/method-4.JPG" alt="Cartographic Presentation or Visualization" width="1051" height="541">
-				<img src="images/dashboard-2.JPG" alt="ArcGIS Dashboard Example 1" width="1908" height="861">
-				<img src="images/dashboard-3.JPG" alt="ArcGIS Dashboard Example 2" width="1913" height="858">
-                <!-- About Section Button-->
+                    <div class="col-lg-13 ms-auto"><p class="lead-heading">Data Acquisition and Pre-Processing</p>
+					</div>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-1">To start, we first acquired food bank intake data from our client, FeedOntario, though their data management partner, Link2Feed. The acquired data was captured from the period of January 1 to December 31, 2018. Next, we retrieved census geographic boundary files from Statistics Canada (2016), as well as an electoral riding geographic boundary file from Elections Ontario (2018). Socioeconomic/socio-demographic datasets were also retrieved from Statistics Canada from the Census Profile (2016). We also obtained a Postal Code Conversion File (PCCF) from the Fleming College Library to facilitate geocoding.</p>
+					<p class="lead-1">For <i>pre-processing</i>, We utilized the Pandas Python module to effectively combine these large datasets and reduce them to only those census profile characteristics we were most interested in. We also worked to organize and clean the food bank intake data provided by Link2Feed to ensure accuracy and usability for subsequent processes and applications.  The Postal Code Conversion File (PCCF) enabled the geocoding of the Link2Feed dataset so that it could be mapped.</p>
+					</div>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<br>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-heading">Database Design and/or Processing</p>
+					</div>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-1">We created two databases, one with data attributed to Ontario’s electoral ridings and the other to a custom “mixed census” study area that introduced a more fine-grained local level of analysis across Ontario census subdivisions and census tracts. Each database included food bank use data and census variables of interest which were spatially joined to areas within the defined geographic boundaries. </p>
+					</div>
+					<p class="lead-1">The diagram below outlines the process of creating the database for the “mixed census” dataset:</p>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4"></h4>
+                        <img src="images/method-2.jpg" alt="Workflow" width="1033" height="622">
+						<br>
+                    </div>
+				</div>
+				</div>
+				<br>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-heading">Spatial / Statistical Analysis</p>
+					</div>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-1">We imported our datasets into an RStudio project using R-ArcGIS Bridge to test bivariate correlations between total food bank clients per capita and various census characteristics of interest through Spearman's Rank correlation coefficient. Simple scatter plots confirmed monotonic relationships in our data that demonstrated statistical significance. Monotonic relationships that were deemed significantly significant helped guide which census exploratory variables were appropriate to proceed with given our mapping technique of choice.</p>
+					</div>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-heading">Cartographic Visualization and Presentation</p>
+					</div>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-1">Our client’s primary goal was to intersect variables of interest to see how they compare and contrast and to visualize these relationships across particular geographies. With this in mind, we adopted a bivariate choropleth mapping technique and classified our data using the quantile method. This classification method ranked all datasets into quantitatively low, medium, or high categories with consideration for how the data was distributed within each dataset. The bivariate technique facilitated the crossing of variables such that the map reflected the relative extent of “agreement” or “disagreement” between variables.</p>
+					<p class="lead-1">For example, a local area that exhibits high food bank use as well as a high proportion of rented households would be considered a high level of “agreement,” whereas with a scenario of high food bank use and a low proportion of rented households, the opposite would be true.</p>
+					</div>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<br>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-heading">Building the "Final Product"</p>
+					</div>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<div class="row">
+                    <div class="col-lg-13 ms-auto"><p class="lead-1">A series of bivariate maps were configured in ArcGIS Online and subsequently integrated into ArcGIS Dashboards to provide further context, summary statistics, local area pop-ups and additional location-based information for each map (or variable pair). Finally, these dashboards were consolidated into a Story Map Collection which provides links to our configured apps, a demo, as well as some additional context about the project.</p>
+					</div>
+					<br>
+					<p class="lead-1"><i>Check out a sample of our configured web app below!</i></p>
+                    <div class="col-lg-13 me-auto"><p class="lead-1"></p></div>
+                </div>
+				<div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4"></h4>
+                        <img src="images/dashboard-2.jpg" alt="ArcGIS Dashboard" width="1207" height="544">
+						<br>
+                    </div>
+				</div>
+				</div>
+				<div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4"></h4>
+                        <img src="images/dashboard-3.jpg" alt="ArcGIS Dashboard" width="1207" height="539">
+						<br>
+                    </div>
+				</div>
+				</div>
+				
+				<br>
                 <div class="text-center mt-4">
                     <a class="btn btn-xl btn-outline-light" href="https://storymaps.arcgis.com/collections/a0c9e8bec65e4c6b9032791f8fe19aef/">
                         Click here to learn more & access the interactive map!
@@ -119,17 +195,20 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Corwan Groux | Applications Specialist <a class="btn btn-xl btn-outline-light" href="https://www.linkedin.com/in/corwangroux/">
+                    <img src="images/Corwan-Groux.JPG" alt="Group Logo" width="0" height="0">
+					<div class="col-lg-4 ms-auto"><p class="lead-2">Corwan Groux | Applications Specialist Candidate <img src="images/Corwan-Groux.JPG" alt="Corwan Groux" width="347" height="382"> <a class="btn btn-xl btn-outline-light" href="https://www.linkedin.com/in/corwangroux/">
                        Connect with Corwan on LinkedIn
                     </a>  
 					</p>
 					</div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Kedie Perdue | Cartographic Specialist  kediperdue@gmail.com </p></div>
-					<div class="col-lg-4 ms-auto"><p class="lead">Nicholas Pretli | Cartographic Specialist <a class="btn btn-xl btn-outline-light" href="https://www.linkedin.com/in/npretli/">
+                    <div class="col-lg-4 me-auto"><p class="lead-2">Kedie Perdue | Cartographic Specialist Candidate <img src="images/Kedie-Perdue.JPG" alt="Kedie Perdue" width="333" height="387"> <a class="btn btn-xl btn-outline-light" href="mailto:"kediperdue@gmail.com">
+					 Contact Kedie: <i>kediperdue@gmail.com</i>
+                    </a>  
+					</p>
+					</div>
+					<div class="col-lg-4 ms-auto"><p class="lead-2">Nicholas Pretli | Cartographic Specialist Candidate <img src="images/Nicholas-Pretli.JPG" alt="Nicholas Pretli" width="348" height="384"> <a class="btn btn-xl btn-outline-light" href="https://www.linkedin.com/in/npretli/">
                        Connect with Nick on LinkedIn
                     </a> 
-					
-		
 					</p>
 					</div>
                 </div>
@@ -168,7 +247,7 @@
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Created by "Cornucopia GIS" (Corwan Groux, Kedie Perdue & Nicholas Pretli)</small></div>
 			<div class="container"><small>Template by Bootstrap</small></div>
-			<div class="container"><small>Last Modified June 28, 2021</small></div>
+			<div class="container"><small>Last Modified June 29, 2021</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -189,7 +268,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="images/lim-census.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Under construction. More to come soon!</p>
+                                    <p class="mb-4">Filler Text</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -211,7 +290,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Low-Income (LIM) Rate</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Filler Text</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -219,7 +298,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="images/lim-census.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Under construction. More to come soon!</p>
+                                    <p class="mb-4">Filler Text</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -241,7 +320,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Median Cost of Rent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Filler Text</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -249,7 +328,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="images/lim-census.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Under construction. More to come soon!</p>
+                                    <p class="mb-4">Filler Text</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -271,7 +350,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Median Income</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Filler Text</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -279,7 +358,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="images/lim-census.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Under construction. More to come soon!</p>
+                                    <p class="mb-4">Filler Text</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -301,7 +380,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">One-Person Households</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Filler Text</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -309,7 +388,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="images/lim-census.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Under construction. More to come soon!</p>
+                                    <p class="mb-4">Filler Text</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -331,7 +410,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Renter Households</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Filler Text</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -339,7 +418,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="images/lim-census.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Under construction. More to come soon!</p>
+                                    <p class="mb-4">Filler Text</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -361,7 +440,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Unemployment Rate</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Filler Text</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -369,7 +448,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="images/lim-census.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Under construction. More to come soon!</p>
+                                    <p class="mb-4">Filler Text</p>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
